@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: false}))
 
 let name = 'User';
 let email = 'user@gmail.com'
-let ph = '02885226220'
+let ph = '1234567890'
 
 app.get('/', (req, res) => {
     res.render(`index.ejs`, {
