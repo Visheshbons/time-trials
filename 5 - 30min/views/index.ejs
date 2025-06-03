@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Welcome, <%- user %>!</title>
+</head>
+<body>
+    <h1>Hello, <%- user %>!</h1>
+    <p>Welcome Back!</p>
+    <br>
+    <h2>My Data:</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>Data Name</th>
+                <th>Set Data</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><%- user %></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><%- email %></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><%- ph %></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="/changeName" method="post">
+        <h2>Change your name</h2>
+        <input type="text" name="name" id="name" placeholder="New Name...">
+        <input type="submit" value="Change...">
+    </form>
+    <br>
+    <form action="/changeEmail" method="post">
+        <h2>Change your email</h2>
+        <input type="text" name="email" id="email" placeholder="your.name@something.com">
+        <input type="submit" value="Change...">
+    </form>
+    <br>
+    <form action="/changePh" method="post">
+        <h2>Change your phone number</h2>
+        <input type="text" name="ph" id="ph" placeholder="1234567890">
+        <input type="submit" value="Change...">
+    </form>
+    <br>
+    <br>
+    <footer>
+        <p><small>&copy; 2025 Vishesh Kudva. All Rights Reserved.</small></p>
+        <p><small>This data will self-destruct after a few minutes.</small></p>
+    </footer>
+</body>
+</html>
+
+<!-- 
+This code is dedicated to Alexandra Lee.
+-->
